@@ -1,0 +1,76 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" width="400" height="400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0F0F1A"/>
+      <stop offset="100%" style="stop-color:#1A1A2E"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4CC9F0"/>
+      <stop offset="100%" style="stop-color:#7B2FBE"/>
+    </linearGradient>
+    <linearGradient id="bookGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4CC9F0"/>
+      <stop offset="100%" style="stop-color:#7B2FBE"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="circle-clip">
+      <circle cx="200" cy="200" r="175"/>
+    </clipPath>
+  </defs>
+
+  <!-- Outer circle background -->
+  <circle cx="200" cy="200" r="195" fill="url(#bg)"/>
+
+  <!-- Gradient ring -->
+  <circle cx="200" cy="200" r="185" fill="none" stroke="url(#ring)" stroke-width="6"/>
+  <circle cx="200" cy="200" r="175" fill="none" stroke="#1A1A2E" stroke-width="2"/>
+
+  <!-- Inner dark circle -->
+  <circle cx="200" cy="200" r="172" fill="#0F0F1A"/>
+
+  <!-- Book stack (3 books) -->
+  <!-- Book 3 (bottom) -->
+  <rect x="118" y="218" width="100" height="54" rx="4" fill="#7B2FBE"/>
+  <rect x="118" y="218" width="12" height="54" rx="2" fill="#6022AA"/>
+  <line x1="138" y1="232" x2="210" y2="232" stroke="#9B4FDE" stroke-width="2"/>
+  <line x1="138" y1="242" x2="200" y2="242" stroke="#9B4FDE" stroke-width="1.5"/>
+  <line x1="138" y1="252" x2="205" y2="252" stroke="#9B4FDE" stroke-width="1.5"/>
+
+  <!-- Book 2 (middle) -->
+  <rect x="125" y="178" width="100" height="46" rx="4" fill="#06D6A0"/>
+  <rect x="125" y="178" width="12" height="46" rx="2" fill="#04AA80"/>
+  <line x1="145" y1="192" x2="217" y2="192" stroke="#3DEBB8" stroke-width="2"/>
+  <line x1="145" y1="202" x2="207" y2="202" stroke="#3DEBB8" stroke-width="1.5"/>
+  <line x1="145" y1="212" x2="212" y2="212" stroke="#3DEBB8" stroke-width="1.5"/>
+
+  <!-- Book 1 (top) -->
+  <rect x="132" y="142" width="100" height="42" rx="4" fill="#4CC9F0"/>
+  <rect x="132" y="142" width="12" height="42" rx="2" fill="#3BAAD0"/>
+  <line x1="152" y1="156" x2="224" y2="156" stroke="#7DDCF8" stroke-width="2"/>
+  <line x1="152" y1="166" x2="214" y2="166" stroke="#7DDCF8" stroke-width="1.5"/>
+  <line x1="152" y1="176" x2="219" y2="176" stroke="#7DDCF8" stroke-width="1.5"/>
+
+  <!-- Code brackets -->
+  <text x="248" y="225" font-family="Consolas, monospace" font-size="52" font-weight="bold"
+        fill="url(#bookGrad)" filter="url(#glow)" opacity="0.85">{}</text>
+
+  <!-- HC monogram — subtle background text -->
+  <text x="200" y="130" font-family="Arial, sans-serif" font-size="28" font-weight="bold"
+        fill="#4CC9F0" text-anchor="middle" opacity="0.25" letter-spacing="4">HC</text>
+
+  <!-- Name below -->
+  <text x="200" y="308" font-family="Arial, sans-serif" font-size="20" font-weight="bold"
+        fill="#FFFFFF" text-anchor="middle" letter-spacing="3">HARDCODERS</text>
+
+  <!-- Tagline -->
+  <text x="200" y="330" font-family="Arial, sans-serif" font-size="11"
+        fill="#4CC9F0" text-anchor="middle" letter-spacing="2">LIBRARY SYSTEM</text>
+
+  <!-- Small dot separators -->
+  <circle cx="147" cy="348" r="3" fill="#7B2FBE"/>
+  <circle cx="200" cy="348" r="3" fill="#4CC9F0"/>
+  <circle cx="253" cy="348" r="3" fill="#06D6A0"/>
+</svg>
