@@ -1,11 +1,10 @@
 #pragma once
 #include <string>
 
-// Модел на книга
 struct Book {
-    int    id;
+    int         id;
     std::string title;
     std::string author;
     std::string genre;
-    int    year;
+    int         year;
 };

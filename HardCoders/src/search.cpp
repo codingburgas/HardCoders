@@ -1,22 +1,22 @@
-#include "logic.h"
-#include "utils.h"
+#include "../include/logic.h"
+#include "../include/utils.h"
 
-std::vector<Book> searchByAuthor(const std::vector<Book>& books, const std::string& author) {
-    std::vector<Book> result;
+using namespace std;
+
+vector<Book> searchByAuthor(const vector<Book>& books, const string& query) {
+    vector<Book> result;
     for (const Book& b : books) {
-        if (containsIgnoreCase(b.author, author)) {
+        if (containsIgnoreCase(b.author, query))
             result.push_back(b);
-        }
     }
     return result;
 }
 
-std::vector<Book> searchByGenre(const std::vector<Book>& books, const std::string& genre) {
-    std::vector<Book> result;
+vector<Book> searchByGenre(const vector<Book>& books, const string& query) {
+    vector<Book> result;
     for (const Book& b : books) {
-        if (containsIgnoreCase(b.genre, genre)) {
+        if (containsIgnoreCase(b.genre, query))
             result.push_back(b);
-        }
     }
     return result;
 }

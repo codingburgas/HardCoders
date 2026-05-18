@@ -1,8 +1,11 @@
 #pragma once
 
-// Path to the data file
 static const char* DATA_FILE = "data/books.txt";
 
-// Year range for validation
-static const int MIN_YEAR = 1000;
-static const int MAX_YEAR = 2100;
+static const int MIN_YEAR    = 1000;
+static const int MAX_YEAR    = 2100;
+
+// Window size
+static const int WIN_W       = 900;
+static const int WIN_H       = 600;
+static const int FPS         = 60;
