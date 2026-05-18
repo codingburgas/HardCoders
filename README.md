@@ -1,6 +1,7 @@
 <p align="center">
-  <img src="docs/logo.svg" width="160" alt="HardCoders Logo"/>
+  <img src="Documentation/HardCoders_logo.svg" alt="HardCoders Logo" width="240">
 </p>
+
 
 <h1 align="center">HardCoders – Library Management System</h1>
 
