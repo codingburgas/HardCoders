@@ -1,3 +1,4 @@
+#include <vector>
 #include "../include/ui.h"
 #include "../include/logic.h"
 #include "../include/storage.h"
@@ -10,6 +11,8 @@
 #else
 #include "raylib.h"
 #endif
+
+using namespace std;
 
 int main() {
     InitWindow(WIN_W, WIN_H, "HardCoders Library");
