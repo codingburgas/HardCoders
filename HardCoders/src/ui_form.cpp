@@ -2,7 +2,7 @@
 #include "../include/logic.h"
 #include "../include/storage.h"
 #include "../include/constants.h"
-#include "raylib.h"
+#include "../include/raylib.h"
 #include <string>
 #include <cstring>
 

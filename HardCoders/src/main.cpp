@@ -2,9 +2,14 @@
 #include "../include/logic.h"
 #include "../include/storage.h"
 #include "../include/constants.h"
-#include "raylib.h"
 
-using namespace std;
+// Prefer system raylib if available; fall back to the local stub header so the
+// project can build and run without installing raylib or requiring admin.
+#if __has_include(<raylib.h>)
+#include <raylib.h>
+#else
+#include "raylib.h"
+#endif
 
 int main() {
     InitWindow(WIN_W, WIN_H, "HardCoders Library");
